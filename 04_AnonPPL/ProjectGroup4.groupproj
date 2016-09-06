@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3A189207-AC69-41F9-A280-C3AB4C3AA4E9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01_AnonymFirst_VCL\AnonymFirst.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02_AnonButton\AnonButton.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03_ParallelFor\ParallelFormMulti.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_AutoThreading\AutoThreading.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_ParallelTasksAndFutures\ParallelTaskAndFutures.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AnonymFirst">
+        <MSBuild Projects="01_AnonymFirst_VCL\AnonymFirst.dproj"/>
+    </Target>
+    <Target Name="AnonymFirst:Clean">
+        <MSBuild Projects="01_AnonymFirst_VCL\AnonymFirst.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AnonymFirst:Make">
+        <MSBuild Projects="01_AnonymFirst_VCL\AnonymFirst.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AnonButton">
+        <MSBuild Projects="02_AnonButton\AnonButton.dproj"/>
+    </Target>
+    <Target Name="AnonButton:Clean">
+        <MSBuild Projects="02_AnonButton\AnonButton.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AnonButton:Make">
+        <MSBuild Projects="02_AnonButton\AnonButton.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParallelFormMulti">
+        <MSBuild Projects="03_ParallelFor\ParallelFormMulti.dproj"/>
+    </Target>
+    <Target Name="ParallelFormMulti:Clean">
+        <MSBuild Projects="03_ParallelFor\ParallelFormMulti.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelFormMulti:Make">
+        <MSBuild Projects="03_ParallelFor\ParallelFormMulti.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AutoThreading">
+        <MSBuild Projects="04_AutoThreading\AutoThreading.dproj"/>
+    </Target>
+    <Target Name="AutoThreading:Clean">
+        <MSBuild Projects="04_AutoThreading\AutoThreading.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AutoThreading:Make">
+        <MSBuild Projects="04_AutoThreading\AutoThreading.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParallelTaskAndFutures">
+        <MSBuild Projects="05_ParallelTasksAndFutures\ParallelTaskAndFutures.dproj"/>
+    </Target>
+    <Target Name="ParallelTaskAndFutures:Clean">
+        <MSBuild Projects="05_ParallelTasksAndFutures\ParallelTaskAndFutures.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelTaskAndFutures:Make">
+        <MSBuild Projects="05_ParallelTasksAndFutures\ParallelTaskAndFutures.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AnonymFirst;AnonButton;ParallelFormMulti;AutoThreading;ParallelTaskAndFutures"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AnonymFirst:Clean;AnonButton:Clean;ParallelFormMulti:Clean;AutoThreading:Clean;ParallelTaskAndFutures:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AnonymFirst:Make;AnonButton:Make;ParallelFormMulti:Make;AutoThreading:Make;ParallelTaskAndFutures:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

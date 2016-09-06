@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{916415F9-1217-4F97-BDC0-D035EC66342A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01_Dates4\Dates4.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02_ClicksCount\ClicksCount.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03_DerivedDates\DerivedDates.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_ControlHelper\ControlHelper.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_FormProperties\FormProperties.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06_DynamicEvents\DynamicEvents.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07_ClassRef\ClassRef.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08_Intf101\Intf101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09_IntfDemo\IntfDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10_AdapterIntf_VCL\Adapter_Demo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="11_ExceptionFinally\ExceptFinally.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Dates4">
+        <MSBuild Projects="01_Dates4\Dates4.dproj"/>
+    </Target>
+    <Target Name="Dates4:Clean">
+        <MSBuild Projects="01_Dates4\Dates4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Dates4:Make">
+        <MSBuild Projects="01_Dates4\Dates4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClicksCount">
+        <MSBuild Projects="02_ClicksCount\ClicksCount.dproj"/>
+    </Target>
+    <Target Name="ClicksCount:Clean">
+        <MSBuild Projects="02_ClicksCount\ClicksCount.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClicksCount:Make">
+        <MSBuild Projects="02_ClicksCount\ClicksCount.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DerivedDates">
+        <MSBuild Projects="03_DerivedDates\DerivedDates.dproj"/>
+    </Target>
+    <Target Name="DerivedDates:Clean">
+        <MSBuild Projects="03_DerivedDates\DerivedDates.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DerivedDates:Make">
+        <MSBuild Projects="03_DerivedDates\DerivedDates.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ControlHelper">
+        <MSBuild Projects="04_ControlHelper\ControlHelper.dproj"/>
+    </Target>
+    <Target Name="ControlHelper:Clean">
+        <MSBuild Projects="04_ControlHelper\ControlHelper.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControlHelper:Make">
+        <MSBuild Projects="04_ControlHelper\ControlHelper.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FormProperties">
+        <MSBuild Projects="05_FormProperties\FormProperties.dproj"/>
+    </Target>
+    <Target Name="FormProperties:Clean">
+        <MSBuild Projects="05_FormProperties\FormProperties.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FormProperties:Make">
+        <MSBuild Projects="05_FormProperties\FormProperties.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DynamicEvents">
+        <MSBuild Projects="06_DynamicEvents\DynamicEvents.dproj"/>
+    </Target>
+    <Target Name="DynamicEvents:Clean">
+        <MSBuild Projects="06_DynamicEvents\DynamicEvents.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DynamicEvents:Make">
+        <MSBuild Projects="06_DynamicEvents\DynamicEvents.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClassRef">
+        <MSBuild Projects="07_ClassRef\ClassRef.dproj"/>
+    </Target>
+    <Target Name="ClassRef:Clean">
+        <MSBuild Projects="07_ClassRef\ClassRef.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClassRef:Make">
+        <MSBuild Projects="07_ClassRef\ClassRef.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Intf101">
+        <MSBuild Projects="08_Intf101\Intf101.dproj"/>
+    </Target>
+    <Target Name="Intf101:Clean">
+        <MSBuild Projects="08_Intf101\Intf101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Intf101:Make">
+        <MSBuild Projects="08_Intf101\Intf101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IntfDemo">
+        <MSBuild Projects="09_IntfDemo\IntfDemo.dproj"/>
+    </Target>
+    <Target Name="IntfDemo:Clean">
+        <MSBuild Projects="09_IntfDemo\IntfDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IntfDemo:Make">
+        <MSBuild Projects="09_IntfDemo\IntfDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Adapter_Demo">
+        <MSBuild Projects="10_AdapterIntf_VCL\Adapter_Demo.dproj"/>
+    </Target>
+    <Target Name="Adapter_Demo:Clean">
+        <MSBuild Projects="10_AdapterIntf_VCL\Adapter_Demo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Adapter_Demo:Make">
+        <MSBuild Projects="10_AdapterIntf_VCL\Adapter_Demo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExceptFinally">
+        <MSBuild Projects="11_ExceptionFinally\ExceptFinally.dproj"/>
+    </Target>
+    <Target Name="ExceptFinally:Clean">
+        <MSBuild Projects="11_ExceptionFinally\ExceptFinally.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExceptFinally:Make">
+        <MSBuild Projects="11_ExceptionFinally\ExceptFinally.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Dates4;ClicksCount;DerivedDates;ControlHelper;FormProperties;DynamicEvents;ClassRef;Intf101;IntfDemo;Adapter_Demo;ExceptFinally"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Dates4:Clean;ClicksCount:Clean;DerivedDates:Clean;ControlHelper:Clean;FormProperties:Clean;DynamicEvents:Clean;ClassRef:Clean;Intf101:Clean;IntfDemo:Clean;Adapter_Demo:Clean;ExceptFinally:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Dates4:Make;ClicksCount:Make;DerivedDates:Make;ControlHelper:Make;FormProperties:Make;DynamicEvents:Make;ClassRef:Make;Intf101:Make;IntfDemo:Make;Adapter_Demo:Make;ExceptFinally:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

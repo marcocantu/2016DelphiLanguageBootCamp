@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0A17AB47-2B9A-4480-AB5D-1E8FA445A232}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="03_IntegersTest\IntegersTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_CharsTest\CharsTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_UserTypes\UserTypes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06_IfTest\IfTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07_ForTest\ForTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08_OverloadTest\OverloadTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09_RecordMethods\RecordMethods.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10_OperatorsOver\OperatorsOver.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="11_StringHelperTest\StringHelperTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="12_StringMetaTest\StringMetaTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="13_PointersTest\PointersTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="IntegersTest">
+        <MSBuild Projects="03_IntegersTest\IntegersTest.dproj"/>
+    </Target>
+    <Target Name="IntegersTest:Clean">
+        <MSBuild Projects="03_IntegersTest\IntegersTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IntegersTest:Make">
+        <MSBuild Projects="03_IntegersTest\IntegersTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CharsTest">
+        <MSBuild Projects="04_CharsTest\CharsTest.dproj"/>
+    </Target>
+    <Target Name="CharsTest:Clean">
+        <MSBuild Projects="04_CharsTest\CharsTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CharsTest:Make">
+        <MSBuild Projects="04_CharsTest\CharsTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UserTypes">
+        <MSBuild Projects="05_UserTypes\UserTypes.dproj"/>
+    </Target>
+    <Target Name="UserTypes:Clean">
+        <MSBuild Projects="05_UserTypes\UserTypes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserTypes:Make">
+        <MSBuild Projects="05_UserTypes\UserTypes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IfTest">
+        <MSBuild Projects="06_IfTest\IfTest.dproj"/>
+    </Target>
+    <Target Name="IfTest:Clean">
+        <MSBuild Projects="06_IfTest\IfTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IfTest:Make">
+        <MSBuild Projects="06_IfTest\IfTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ForTest">
+        <MSBuild Projects="07_ForTest\ForTest.dproj"/>
+    </Target>
+    <Target Name="ForTest:Clean">
+        <MSBuild Projects="07_ForTest\ForTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ForTest:Make">
+        <MSBuild Projects="07_ForTest\ForTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverloadTest">
+        <MSBuild Projects="08_OverloadTest\OverloadTest.dproj"/>
+    </Target>
+    <Target Name="OverloadTest:Clean">
+        <MSBuild Projects="08_OverloadTest\OverloadTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverloadTest:Make">
+        <MSBuild Projects="08_OverloadTest\OverloadTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RecordMethods">
+        <MSBuild Projects="09_RecordMethods\RecordMethods.dproj"/>
+    </Target>
+    <Target Name="RecordMethods:Clean">
+        <MSBuild Projects="09_RecordMethods\RecordMethods.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RecordMethods:Make">
+        <MSBuild Projects="09_RecordMethods\RecordMethods.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OperatorsOver">
+        <MSBuild Projects="10_OperatorsOver\OperatorsOver.dproj"/>
+    </Target>
+    <Target Name="OperatorsOver:Clean">
+        <MSBuild Projects="10_OperatorsOver\OperatorsOver.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OperatorsOver:Make">
+        <MSBuild Projects="10_OperatorsOver\OperatorsOver.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringHelperTest">
+        <MSBuild Projects="11_StringHelperTest\StringHelperTest.dproj"/>
+    </Target>
+    <Target Name="StringHelperTest:Clean">
+        <MSBuild Projects="11_StringHelperTest\StringHelperTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringHelperTest:Make">
+        <MSBuild Projects="11_StringHelperTest\StringHelperTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringMetaTest">
+        <MSBuild Projects="12_StringMetaTest\StringMetaTest.dproj"/>
+    </Target>
+    <Target Name="StringMetaTest:Clean">
+        <MSBuild Projects="12_StringMetaTest\StringMetaTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringMetaTest:Make">
+        <MSBuild Projects="12_StringMetaTest\StringMetaTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PointersTest">
+        <MSBuild Projects="13_PointersTest\PointersTest.dproj"/>
+    </Target>
+    <Target Name="PointersTest:Clean">
+        <MSBuild Projects="13_PointersTest\PointersTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PointersTest:Make">
+        <MSBuild Projects="13_PointersTest\PointersTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="IntegersTest;CharsTest;UserTypes;IfTest;ForTest;OverloadTest;RecordMethods;OperatorsOver;StringHelperTest;StringMetaTest;PointersTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="IntegersTest:Clean;CharsTest:Clean;UserTypes:Clean;IfTest:Clean;ForTest:Clean;OverloadTest:Clean;RecordMethods:Clean;OperatorsOver:Clean;StringHelperTest:Clean;StringMetaTest:Clean;PointersTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="IntegersTest:Make;CharsTest:Make;UserTypes:Make;IfTest:Make;ForTest:Make;OverloadTest:Make;RecordMethods:Make;OperatorsOver:Make;StringHelperTest:Make;StringMetaTest:Make;PointersTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

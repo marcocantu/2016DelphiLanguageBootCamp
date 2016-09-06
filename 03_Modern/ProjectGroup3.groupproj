@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D9C53617-BFD2-4873-8B29-8A895E366C88}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01_KeyValueGeneric_VCL\KeyValueGeneric.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02_StringListVsDictionary_VCL\StringListVsDictionary.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03_GenericMethod\GenericMethod.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_RttiAccess\RttiAccess.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_TypesList\TypesList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06_RttiAttrib_VCL\RttiAttrib.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07_DescriptionAttribute_VCL\DescriptionAttribute.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="KeyValueGeneric">
+        <MSBuild Projects="01_KeyValueGeneric_VCL\KeyValueGeneric.dproj"/>
+    </Target>
+    <Target Name="KeyValueGeneric:Clean">
+        <MSBuild Projects="01_KeyValueGeneric_VCL\KeyValueGeneric.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KeyValueGeneric:Make">
+        <MSBuild Projects="01_KeyValueGeneric_VCL\KeyValueGeneric.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringListVsDictionary">
+        <MSBuild Projects="02_StringListVsDictionary_VCL\StringListVsDictionary.dproj"/>
+    </Target>
+    <Target Name="StringListVsDictionary:Clean">
+        <MSBuild Projects="02_StringListVsDictionary_VCL\StringListVsDictionary.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringListVsDictionary:Make">
+        <MSBuild Projects="02_StringListVsDictionary_VCL\StringListVsDictionary.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GenericMethod">
+        <MSBuild Projects="03_GenericMethod\GenericMethod.dproj"/>
+    </Target>
+    <Target Name="GenericMethod:Clean">
+        <MSBuild Projects="03_GenericMethod\GenericMethod.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenericMethod:Make">
+        <MSBuild Projects="03_GenericMethod\GenericMethod.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RttiAccess">
+        <MSBuild Projects="04_RttiAccess\RttiAccess.dproj"/>
+    </Target>
+    <Target Name="RttiAccess:Clean">
+        <MSBuild Projects="04_RttiAccess\RttiAccess.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RttiAccess:Make">
+        <MSBuild Projects="04_RttiAccess\RttiAccess.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TypesList">
+        <MSBuild Projects="05_TypesList\TypesList.dproj"/>
+    </Target>
+    <Target Name="TypesList:Clean">
+        <MSBuild Projects="05_TypesList\TypesList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TypesList:Make">
+        <MSBuild Projects="05_TypesList\TypesList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RttiAttrib">
+        <MSBuild Projects="06_RttiAttrib_VCL\RttiAttrib.dproj"/>
+    </Target>
+    <Target Name="RttiAttrib:Clean">
+        <MSBuild Projects="06_RttiAttrib_VCL\RttiAttrib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RttiAttrib:Make">
+        <MSBuild Projects="06_RttiAttrib_VCL\RttiAttrib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DescriptionAttribute">
+        <MSBuild Projects="07_DescriptionAttribute_VCL\DescriptionAttribute.dproj"/>
+    </Target>
+    <Target Name="DescriptionAttribute:Clean">
+        <MSBuild Projects="07_DescriptionAttribute_VCL\DescriptionAttribute.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DescriptionAttribute:Make">
+        <MSBuild Projects="07_DescriptionAttribute_VCL\DescriptionAttribute.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="KeyValueGeneric;StringListVsDictionary;GenericMethod;RttiAccess;TypesList;RttiAttrib;DescriptionAttribute"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="KeyValueGeneric:Clean;StringListVsDictionary:Clean;GenericMethod:Clean;RttiAccess:Clean;TypesList:Clean;RttiAttrib:Clean;DescriptionAttribute:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="KeyValueGeneric:Make;StringListVsDictionary:Make;GenericMethod:Make;RttiAccess:Make;TypesList:Make;RttiAttrib:Make;DescriptionAttribute:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
